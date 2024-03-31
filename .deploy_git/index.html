@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="CSES 中文題解">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="CSES 中文題解">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="winliu">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>CSES 中文題解</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">CSES 中文題解</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">原神啟動</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/26/Introductory%20Problems/Missing%20Number/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="winliu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CSES 中文題解">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/26/Introductory%20Problems/Missing%20Number/" class="post-title-link" itemprop="url">CSES Problem Set –- Missing Number 題解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-03-26 22:56:47 / Modified: 23:16:44" itemprop="dateCreated datePublished" datetime="2024-03-26T22:56:47+08:00">2024-03-26</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Introductory-Problems/" itemprop="url" rel="index"><span itemprop="name">Introductory Problems</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="CSES-Problem-Set-—-Missing-Number-題解"><a href="#CSES-Problem-Set-—-Missing-Number-題解" class="headerlink" title="CSES Problem Set — Missing Number 題解"></a>CSES Problem Set — Missing Number 題解</h1><h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p>給你 $1$ 到 $n$ 之間所有的整數，但少了一個數字。你的任務是找出缺少了哪一個數字。</p>
+<h3 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h3><ul>
+<li>第一行輸入一個整數 $n$。（$2 \le n \le 2 \cdot 10^5$）</li>
+<li>第二行輸入 $n-1$ 個不重複的整數 $k_i$。（$1 \le k_i \le n$）</li>
+</ul>
+<h3 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h3><p>輸出缺少的數字</p>
+<h2 id="範例測資"><a href="#範例測資" class="headerlink" title="範例測資"></a>範例測資</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input : </span><br><span class="line">5</span><br><span class="line">2 3 1 5</span><br><span class="line"></span><br><span class="line">Output :</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<p>輸入為 $2$ $3$ $1$ $5$ ，在 $1$ 到 $5$ 的中少了 $4$，因此要輸出 $4$。</p>
+<h2 id="想法-1：排序後檢查"><a href="#想法-1：排序後檢查" class="headerlink" title="想法 1：排序後檢查"></a>想法 1：排序後檢查</h2><p>先把輸入的數字排序過後，循序找解即可。</p>
+<p>複雜度是 $O(n\log n+n)$。</p>
+<h3 id="範例程式碼"><a href="#範例程式碼" class="headerlink" title="範例程式碼"></a>範例程式碼</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, x;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; xs;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">        xs.<span class="built_in">push_back</span>(x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(xs.<span class="built_in">begin</span>(), xs.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(xs[i] != i + <span class="number">1</span>) &#123;</span><br><span class="line">            cout &lt;&lt; i + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="想法-2：計數檢查"><a href="#想法-2：計數檢查" class="headerlink" title="想法 2：計數檢查"></a>想法 2：計數檢查</h2><p>我們可以先建立長度為 $n$ 的列表來記錄個別數字出現的次數（在這題要不是 $0$ 就是 $1$），之後遍歷整個列表找哪個數字出現 $0$ 次就好。</p>
+<h3 id="範例程式碼-1"><a href="#範例程式碼-1" class="headerlink" title="範例程式碼"></a>範例程式碼</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, x;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">cnt</span><span class="params">(n, <span class="number">0</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">        cnt[x<span class="number">-1</span>] = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(cnt[i] == <span class="number">0</span>) &#123;</span><br><span class="line">            cout &lt;&lt; i + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="想法-3：從總和檢查"><a href="#想法-3：從總和檢查" class="headerlink" title="想法 3：從總和檢查"></a>想法 3：從總和檢查</h2><p>考慮一個有結合律與交換律的「加法」運算 $\oplus$，那麼輸入就可以不斷用 $\oplus$ 來「加總」成 \[<br>  1 \oplus 2 \oplus \cdots \oplus (k-1) \oplus (k+1) \oplus \cdots \oplus n,<br>\] 其中 $k$ 是缺少的數字。如果這個 $\oplus$ 運算是可逆的，那我們就能拿完整 $1 \oplus 2 \oplus \cdots \oplus n$ 的結果「減去」上面的「總和」，得到缺少的 $k$。</p>
+<p>基本上需要 $O(n)$ 的時間與 $O(1)$ 的空間來計算「總和」。</p>
+<p>下面依照選用的運算 $\oplus$，提供兩種不同的方法。</p>
+<h3 id="想法-3-1：加法版"><a href="#想法-3-1：加法版" class="headerlink" title="想法 3-1：加法版"></a>想法 3-1：加法版</h3><p>使用加法。其中我們有等差級數公式 $1 + 2 + \dots + n &#x3D; \dfrac{n(n+1)}{2}$。</p>
+<p>但要注意 $n$ 足夠大的時候，總和會超過 <code>int</code> 的範圍，必須使用 <code>long long</code> 才能通過 CSES 的測資。</p>
+<blockquote>
+<p>或者你可以在每次運算後都 mod 比 $n$ 大的數。</p>
+</blockquote>
+<h3 id="範例程式碼-2"><a href="#範例程式碼-2" class="headerlink" title="範例程式碼"></a>範例程式碼</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> n, x;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">        sum += x;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; (n * (n + <span class="number">1</span>) / <span class="number">1</span>) - sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="想法-3-2：XOR-版"><a href="#想法-3-2：XOR-版" class="headerlink" title="想法 3-2：XOR 版"></a>想法 3-2：XOR 版</h3><p>令 $a \oplus b$ 為 $a$ 與 $b$ 經過 bitwise XOR（也就是程式上的 <code>a ^ b</code>）之後的運算結果，這個運算也是滿足結合律與交換律的。並且任何整數的反元素就是自己：$a \oplus b \oplus b &#x3D; a$，換句話說，「減去」跟「加上」是同樣的運算。</p>
+<p>另外，觀察可得 $4k \oplus (4k+1) \oplus (4k+2) \oplus (4k+3) &#x3D; 0$，於是就有\[<br>  1 \oplus 2 \oplus \cdots \oplus n<br>  &#x3D; (4 \lfloor n&#x2F;4 \rfloor) \oplus \cdots \oplus n,<br>\]其中 $4 \lfloor n&#x2F;4 \rfloor$ 可以用 <code>n &gt;&gt; 2 &lt;&lt; 2</code> 算得。</p>
+<p>這個方法相較於上一個的方法好的地方在於總和一定比 $2n$ 來得小，較不用擔心太大的 $n$ 會超出整數範圍。</p>
+<blockquote>
+<p>下面的過程中都是位元運算，若加上 io 優化這題甚至能做成 n 到 8e18 的鴨腸題。</p>
+</blockquote>
+<h3 id="範例程式碼-3"><a href="#範例程式碼-3" class="headerlink" title="範例程式碼"></a>範例程式碼</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, x;</span><br><span class="line">    <span class="type">int</span> all = <span class="number">0</span>, sum = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">        sum ^= x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = n &gt;&gt; <span class="number">2</span> &lt;&lt; <span class="number">2</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        all ^= i;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; (all ^ sum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/26/Introductory%20Problems/Weird%20Algorithm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="winliu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CSES 中文題解">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/26/Introductory%20Problems/Weird%20Algorithm/" class="post-title-link" itemprop="url">CSES Problem Set --- Weird Algorithm 題解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-03-26 22:33:38 / Modified: 23:16:45" itemprop="dateCreated datePublished" datetime="2024-03-26T22:33:38+08:00">2024-03-26</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Introductory-Problems/" itemprop="url" rel="index"><span itemprop="name">Introductory Problems</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><p>有個演算法接受一個正整數 $n$，並重複以下步驟直到 $n$ 變成 $1$：</p>
+<ul>
+<li>如果 $n$ 是偶數，就將它除以 $2$；</li>
+<li>如果 $n$ 是奇數，就將它乘以 $3$ 再加 $1$。</li>
+</ul>
+<p>例如從 $n &#x3D; 3$ 開始，演算法的過程就是<br>\[<br> 3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1.<br>\]</p>
+<p>給你一個正整數 $n$，你的任務是模擬這個演算法。</p>
+<h3 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h3><p>一個正整數 $n$。（$1 \le n \le 10^6$）</p>
+<h3 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h3><p>將正整數 $n$ 經過演算法產生的所有數值按照順序輸出成一行。</p>
+<p>也就是輸出 $n; k_1; k_2; \cdots; 1$，其中演算法的過程為 $n \to k_1 \to k_2 \to \cdots \to 1$。</p>
+<h2 id="範例測資"><a href="#範例測資" class="headerlink" title="範例測資"></a>範例測資</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input :</span><br><span class="line">3</span><br><span class="line"></span><br><span class="line">Output :</span><br><span class="line">3 10 5 16 8 4 2 1</span><br></pre></td></tr></table></figure>
+
+<p>$n &#x3D; 3$ 是奇數，所以讓 $n &#x3D; 3 \times 3 + 1 &#x3D; 10$；<br>$n &#x3D; 10$ 是偶數，所以讓 $n &#x3D; 10 \div 2 &#x3D; 5$；<br>$n &#x3D; 5$ 是奇數，所以讓 $n &#x3D; 5 \times 3 + 1 &#x3D; 16$；<br>以此類推，這個過程會是<br>\[<br> 3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1.<br>\]</p>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>按照題目實作即可。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E8%80%83%E6%8B%89%E8%8C%B2%E7%8C%9C%E6%83%B3">考拉茲猜想</a>聲稱任何正整數經過這個演算法都會結束在 $1$，這個猜想目前還沒有被證明出來。但人們已經檢查過在足夠大（遠比 CSES 測資範圍大）的範圍中這個演算法總是會結束。</p>
+</blockquote>
+<h3 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h3><p>使用 C++ 要注意 <code>int</code> 在測資較大時會溢位。</p>
+<h3 id="範例程式碼"><a href="#範例程式碼" class="headerlink" title="範例程式碼"></a>範例程式碼</h3><h4 id="C-範例"><a href="#C-範例" class="headerlink" title="C++ 範例"></a>C++ 範例</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    cout &lt;&lt; n &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    <span class="keyword">while</span> (n != <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (n % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">            n = n * <span class="number">3</span> + <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            n /= <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; n &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Python-範例"><a href="#Python-範例" class="headerlink" title="Python 範例"></a>Python 範例</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">xs = [<span class="built_in">int</span>(<span class="built_in">input</span>())]</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> xs[-<span class="number">1</span>] != <span class="number">1</span>:</span><br><span class="line">    <span class="keyword">if</span> xs[-<span class="number">1</span>] % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">        xs.append(xs[-<span class="number">1</span>] * <span class="number">3</span> + <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        xs.append(xs[-<span class="number">1</span>] // <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(*xs)</span><br></pre></td></tr></table></figure>
+<h4 id="Haskell-範例"><a href="#Haskell-範例" class="headerlink" title="Haskell 範例"></a>Haskell 範例</h4><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">collatz</span> :: <span class="type">Int</span> -&gt; [<span class="type">Int</span>]</span><br><span class="line"><span class="title">collatz</span> <span class="number">1</span> = [<span class="number">1</span>]</span><br><span class="line"><span class="title">collatz</span> n | even n    = n : collatz (n `div` <span class="number">2</span>)</span><br><span class="line">          | otherwise = n : collatz (<span class="number">3</span> * n + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="title">main</span> :: <span class="type">IO</span> ()</span><br><span class="line"><span class="title">main</span> = interact $ unwords . map show . collatz . read</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">winliu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">winliu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
